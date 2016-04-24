@@ -1,0 +1,213 @@
+---
+object_type: class
+version: 1.0
+object:
+  attributes:
+    description: 
+    display_name: 
+    name: Satellite6
+    type: 
+    inherits: 
+    visibility: 
+    owner: 
+  schema:
+  - field:
+      aetype: attribute
+      name: vmcluster
+      display_name: 
+      datatype: string
+      priority: 1
+      owner: 
+      default_value: Cluster01
+      substitute: true
+      message: create
+      visibility: 
+      collect: 
+      scope: 
+      description: 
+      condition: 
+      on_entry: 
+      on_exit: 
+      on_error: 
+      max_retries: 
+      max_time: 
+  - field:
+      aetype: attribute
+      name: username
+      display_name: 
+      datatype: string
+      priority: 2
+      owner: 
+      default_value: admin
+      substitute: true
+      message: create
+      visibility: 
+      collect: 
+      scope: 
+      description: Satellite6 Username
+      condition: 
+      on_entry: 
+      on_exit: 
+      on_error: 
+      max_retries: 
+      max_time: 
+  - field:
+      aetype: attribute
+      name: cfmeusername
+      display_name: 
+      datatype: string
+      priority: 3
+      owner: 
+      default_value: admin
+      substitute: true
+      message: create
+      visibility: 
+      collect: 
+      scope: 
+      description: CFME Username
+      condition: 
+      on_entry: 
+      on_exit: 
+      on_error: 
+      max_retries: 
+      max_time: 
+  - field:
+      aetype: attribute
+      name: sat6url
+      display_name: 
+      datatype: string
+      priority: 4
+      owner: 
+      default_value: https://satellite.cloudlab.redhat.com/api/v2/
+      substitute: true
+      message: create
+      visibility: 
+      collect: 
+      scope: 
+      description: Url to sat6 api
+      condition: 
+      on_entry: 
+      on_exit: 
+      on_error: 
+      max_retries: 
+      max_time: 
+  - field:
+      aetype: attribute
+      name: katellourl
+      display_name: 
+      datatype: string
+      priority: 5
+      owner: 
+      default_value: https://satellite.cloudlab.redhat.com/katello/api/v2/
+      substitute: true
+      message: create
+      visibility: 
+      collect: 
+      scope: 
+      description: Url to katello api
+      condition: 
+      on_entry: 
+      on_exit: 
+      on_error: 
+      max_retries: 
+      max_time: 
+  - field:
+      aetype: attribute
+      name: emsurl
+      display_name: 
+      datatype: string
+      priority: 6
+      owner: 
+      default_value: https://cf.cloudlab.redhat.com/api/
+      substitute: true
+      message: create
+      visibility: 
+      collect: 
+      scope: 
+      description: Url to ems api
+      condition: 
+      on_entry: 
+      on_exit: 
+      on_error: 
+      max_retries: 
+      max_time: 
+  - field:
+      aetype: attribute
+      name: domain
+      display_name: 
+      datatype: string
+      priority: 7
+      owner: 
+      default_value: 
+      substitute: true
+      message: create
+      visibility: 
+      collect: 
+      scope: 
+      description: domain
+      condition: 
+      on_entry: 
+      on_exit: 
+      on_error: 
+      max_retries: 
+      max_time: 
+  - field:
+      aetype: attribute
+      name: password
+      display_name: 
+      datatype: password
+      priority: 8
+      owner: 
+      default_value: v2:{SNg0JqZIGkfzZLVkGN+lHw==}
+      substitute: true
+      message: create
+      visibility: 
+      collect: 
+      scope: 
+      description: Sat6 admin user password
+      condition: 
+      on_entry: 
+      on_exit: 
+      on_error: 
+      max_retries: 
+      max_time: 
+  - field:
+      aetype: attribute
+      name: passwordems
+      display_name: 
+      datatype: password
+      priority: 9
+      owner: 
+      default_value: v2:{SNg0JqZIGkfzZLVkGN+lHw==}
+      substitute: true
+      message: create
+      visibility: 
+      collect: 
+      scope: 
+      description: EMS admin user password
+      condition: 
+      on_entry: 
+      on_exit: 
+      on_error: 
+      max_retries: 
+      max_time: 
+  - field:
+      aetype: method
+      name: method1
+      display_name: 
+      datatype: string
+      priority: 10
+      owner: 
+      default_value: 
+      substitute: true
+      message: create
+      visibility: 
+      collect: ''
+      scope: 
+      description: 
+      condition: 
+      on_entry: 
+      on_exit: 
+      on_error: 
+      max_retries: 
+      max_time: 

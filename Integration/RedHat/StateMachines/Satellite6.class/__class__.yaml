@@ -1,0 +1,73 @@
+---
+object_type: class
+version: 1.0
+object:
+  attributes:
+    description: 
+    display_name: 
+    name: Satellite6
+    type: 
+    inherits: 
+    visibility: 
+    owner: 
+  schema:
+  - field:
+      aetype: state
+      name: Provision
+      display_name: 
+      datatype: string
+      priority: 1
+      owner: 
+      default_value: 
+      substitute: true
+      message: create
+      visibility: 
+      collect: ''
+      scope: 
+      description: 
+      condition: 
+      on_entry: "#update_serviceprovision_status(status => 'Creating Service')"
+      on_exit: "#update_serviceprovision_status(status => 'Creating Service')"
+      on_error: "#update_serviceprovision_status(status => 'Error Creating Service')"
+      max_retries: '100'
+      max_time: 
+  - field:
+      aetype: state
+      name: CheckProvisioned
+      display_name: 
+      datatype: string
+      priority: 2
+      owner: 
+      default_value: "#/Integration/RedHat/Satellite/Satellite6/CheckProvisioned"
+      substitute: true
+      message: create
+      visibility: 
+      collect: ''
+      scope: 
+      description: 
+      condition: 
+      on_entry: ''
+      on_exit: "#update_serviceprovision_status(status => 'Creating Service')"
+      on_error: "#update_serviceprovision_status(status => '${/#ae_reason}')"
+      max_retries: '100'
+      max_time: 
+  - field:
+      aetype: state
+      name: Finished
+      display_name: 
+      datatype: string
+      priority: 3
+      owner: 
+      default_value: "/System/CommonMethods/StateMachineMethods/service_provision_finished"
+      substitute: true
+      message: create
+      visibility: 
+      collect: 
+      scope: 
+      description: 
+      condition: 
+      on_entry: 
+      on_exit: 
+      on_error: 
+      max_retries: 
+      max_time: 
